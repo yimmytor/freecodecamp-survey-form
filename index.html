@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Online Library Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Encuesta de Preferencias de Usuario</h1>
+        <p id="description">Agradecemos su valiosa opinión en la siguiente encuesta a fin de poder generar un servicio
+            de mayor calidad para todos nuestros usuarios.</p>
+        <form id="survey-form">
+            <div class="form-section">
+                <div class="form-group">
+                    <label class="form-label-control" for="name" id="name-label">Nombre:</label><input type="text"
+                        class="form-input-control" name="name" id="name" placeholder="Escriba su nombre..." required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label-control" for="email" id="email-label">Email:</label><input type="email"
+                        class="form-input-control" name="email" id="email" placeholder="Escriba su email..." required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label-control" for="number" id="number-label">Edad:</label><input type="number"
+                        class="form-input-control" name="number" id="number" placeholder="Escriba su edad..." min="6"
+                        max="125">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label-control" for="dropdown" id="label-dropdown">Sexo: </label>
+                    <select class="form-input-control" name="dropdown" id="dropdown">
+                        <option value="">Masculino</option>
+                        <option value="">Femenino</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-selection-group">
+                    <p class="form-label-control">¿Con que frecuencia consulta material de nuestra biblioteca?</p>
+                    <div class="form-option-group">
+                        <label><input type="radio" name="search-frequency" value="nunca" checked>Nunca</label>
+                        <label><input type="radio" name="search-frequency" value="casi_nunca">Casi Nunca</label>
+                        <label><input type="radio" name="search-frequency" value="regularmente">Regularmente</label>
+                        <label><input type="radio" name="search-frequency" value="frecuentemente">Frecuentemente</label>
+                        <label><input type="radio" name="search-frequency" value="muy_frecuentemente">Muy
+                            Frecuentemente</label>
+                        <label><input type="radio" name="search-frequency" value="diario">A diario</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-selection-group">
+                    <p class="form-label-control">Marque los géneros que sean de su preferencia:</p>
+                    <div class="form-option-group">
+                        <label><input type="checkbox" name="book-gender" value="aventura">Aventura</label>
+                        <label><input type="checkbox" name="book-gender" value="terror">Terror</label>
+                        <label><input type="checkbox" name="book-gender" value="autoayuda">Autoayuda</label>
+                        <label><input type="checkbox" name="book-gender" value="suspenso">Suspenso</label>
+                        <label><input type="checkbox" name="book-gender" value="romance">Romance</label>
+                        <label><input type="checkbox" name="book-gender" value="historia">Historia</label>
+                        <label><input type="checkbox" name="book-gender" value="ficcion">Ficción</label>
+                        <label><input type="checkbox" name="book-gender" value="academico">Acedémico</label>
+                        <label><input type="checkbox" name="book-gender" value="politico">Político</label>
+                        <label><input type="checkbox" name="book-gender" value="religioso">Religioso</label>
+                        <label><input type="checkbox" name="book-gender" value="epico">Épico</label>
+                        <label><input type="checkbox" name="book-gender" value="infantil">Infantil</label>
+                        <label><input type="checkbox" name="book-gender" value="historia">Historia</label>
+                        <label><input type="checkbox" name="book-gender" value="policial">Policial</label>
+                        <label><input type="checkbox" name="book-gender" value="historieta">Historieta</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <p class="form-label-control">¿En qué aspectos piensa que podemos mejorar nuestro servicio?</p>
+                    <textarea class="form-input-control" name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="submit">Enviar Información</button>
+        </form>
+    </div>
+</body>
+
+</html>
